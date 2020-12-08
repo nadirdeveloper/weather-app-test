@@ -10,6 +10,7 @@
     "axios": "^0.19.2",
     "axios-retry": "^3.1.2",
     "gh-pages": "^2.2.0",
+    "html-comment-regex": "^1.1.2",
     "lodash-es": "^4.17.15",
     "moment-timezone": "^0.5.28",
     "node-sass": "^4.13.1",
