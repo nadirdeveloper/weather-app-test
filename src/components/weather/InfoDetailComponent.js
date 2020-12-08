@@ -39,7 +39,7 @@ const InfoDetailComponent = ({weatherCurrent}) => {
 
   return (
     <Fragment>
-      <div className='sm:flex-col md:flex md:flex-row justify-between my-2 px-6 sm:mt-16 sm:mb-16 sm:px-6'>
+      <div className='sm:flex-col md:flex md:flex-row justify-between my-2 px-6 sm:mt-24 sm:mb-32 sm:px-6'>
         <div className='flex-col sm:w-full lg:w-1/2'>
           <div className='flex flex-row justify-between sm:justify-start sm:items-center'>
             <div className='flex flex-col justify-center items-center'>
