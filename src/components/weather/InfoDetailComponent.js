@@ -61,7 +61,7 @@ const InfoDetailComponent = ({weatherCurrent}) => {
                     )}.svg`}
                     alt='icon'
                     title={weatherCurrent.weather[0].main}
-                    className='-mt-2 -ml-4 sm:mx-0 w-32 h-32 object-contain'
+                    className='-mt-2 -ml-4 sm:mx-0 w-56 h-56 object-contain'
                   />
                 )}
               </div>
@@ -71,7 +71,7 @@ const InfoDetailComponent = ({weatherCurrent}) => {
             </div>
             <div className='flex justify-start items-center sm:-mt-3 sm:ml-3'>
               <div>
-                <span className='text-6xl font-bold'>
+                <span style={{fontSize:"115px"}} className='text-6xl font-bold'>
                   {computedTempValue('temp')}
                 </span>
               </div>
@@ -86,7 +86,8 @@ const InfoDetailComponent = ({weatherCurrent}) => {
                       : 'font-light opacity-75'
                   }`}
                   title='Celcius'
-                  onClick={() => unitClick('C')}>
+                  onClick={() => unitClick('C')}
+                  style={{fontSize:"40px"}}>
                   C
                 </span>
                 <span className={`mx-1 opacity-25`}>|</span>
@@ -97,7 +98,8 @@ const InfoDetailComponent = ({weatherCurrent}) => {
                       : 'font-light opacity-75'
                   }`}
                   title='Fahrenheit'
-                  onClick={() => unitClick('F')}>
+                  onClick={() => unitClick('F')}
+                  style={{fontSize:"40px"}}>
                   F
                 </span>
               </div>
