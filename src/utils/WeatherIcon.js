@@ -4,7 +4,7 @@ import moment from 'moment-timezone'
  * @param {Object} data (weatherCurrent, Timeframe, day)
  */
 const getWeatherIcon = data => {
-  const { weather, time, timezone } = data
+  const { weather, dt:time, timezone } = data
   const icon = weather[0].main;
   const hour = moment(time * 1000)
     .tz(timezone)

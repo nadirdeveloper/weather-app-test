@@ -48,7 +48,7 @@ const TimeframeComponent = ({Timeframe}) => {
         <sup>o</sup>
       </p>
       <p className='text-sm font-medium'>
-        {FormatTime(Timeframe.dt, Timeframe.timezone, 'h:mm A')}
+        {FormatTime(Timeframe.dt, Timeframe.timezone, 'HH:mm')}
       </p>
     </div>
   )
