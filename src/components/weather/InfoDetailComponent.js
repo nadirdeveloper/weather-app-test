@@ -10,7 +10,6 @@ import WeatherIconComponent from './WeatherIconComponent'
 import AssetsSrcURL from '../../utils/AssetsSrcURL'
 
 const InfoDetailComponent = ({weatherCurrent}) => {
-  console.log(weatherCurrent)
   const {weatherUnit, updateWeatherUnit} = useContext(WeatherUnitContext)
   const unitClick = (unit) => {
     // track event to GA
@@ -40,7 +39,7 @@ const InfoDetailComponent = ({weatherCurrent}) => {
 
   return (
     <Fragment>
-      <div className='sm:flex-col md:flex md:flex-row justify-between my-2 px-6 sm:mt-5 sm:mb-5 sm:px-4'>
+      <div className='sm:flex-col md:flex md:flex-row justify-between my-2 px-6 sm:mt-16 sm:mb-16 sm:px-6'>
         <div className='flex-col sm:w-full lg:w-1/2'>
           <div className='flex flex-row justify-between sm:justify-start sm:items-center'>
             <div className='flex flex-col justify-center items-center'>

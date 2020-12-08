@@ -11,7 +11,6 @@ import FormatTime from './../../utils/FormatTime'
 import {PropTypes} from 'prop-types'
 
 const ForecastContainer = ({cityName, weatherCurrent, weatherForecast}) => {
-  console.log(weatherForecast)
   const [selectedDay, setSelectedDay] = useState('')
   const [selectedDayIndex, setSelectedDayIndex] = useState(0)
   const {dt, timezone} = weatherCurrent

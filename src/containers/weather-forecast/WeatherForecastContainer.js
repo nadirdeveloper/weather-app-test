@@ -12,11 +12,7 @@ const WeatherForecastContainer = ({
   address,
   latlong,
 }) => {
-  console.log({
-      weatherCurrent,
-    weatherForecast,
-    address,
-    latlong,})
+ 
   const {theme, colorTheme} = useContext(ThemeContext)
 
   const WET_TYPES = ['Rain', 'Snow', 'sleet', 'hail']
@@ -33,15 +29,13 @@ const WeatherForecastContainer = ({
     borderTopLeftRadius: '1rem',
     borderTopRightRadius: '1rem',
   }
-console.log(getWeatherBackground(
-  weatherCurrent
-))
+
   return (
     <Fragment>
       <div
-        className={'flex flex-col justify-center items-center lg:px-5 pt-10'}>
+        className={'flex flex-col justify-center items-center'}>
         <div
-          className={`sm:w-full lg:w-5/6 xl:max-w-6xl bg-${theme} text-${colorTheme} border border-${colorTheme} md:border-none rounded-t-2xl shadow-lg`}>
+          className={`sm:w-full lg:w-6/6 xl:max-w-100 bg-${theme} text-${colorTheme} border border-${colorTheme} md:border-none shadow-lg`}>
           <div className='relative overflow-hidden'>
             <img
               src={`${AssetsSrcURL}/weather-backgrounds/${getWeatherBackground(

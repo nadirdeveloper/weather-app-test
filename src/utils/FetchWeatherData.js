@@ -25,7 +25,6 @@ const FetchWeatherData = async ({latlong}) => {
   if (!isUndefined(latlong) && !isEmpty(latlong) && !isNull(latlong)) {
     try {
       const {data} = await axios.get(getURL(latlong))
-      console.log(data)
       const weatherData = data
       if (!isEmpty(weatherData) && !isUndefined(weatherData)) {
         // NOTE: add timezone property to current, days, and timeFrame data to use it later for

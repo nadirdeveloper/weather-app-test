@@ -71,7 +71,8 @@ const WeatherContainer = () => {
     fetchWeatherData()
     const timer = setInterval(() => {
       fetchWeatherData()
-    }, 3600000)
+      console.log("triggered")
+    }, 102000)
 
     return () => {
       clearInterval(timer)
