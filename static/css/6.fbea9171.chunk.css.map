@@ -1,1 +1,0 @@
-{"version":3,"sources":["AutoCompleteStyle.scss"],"names":[],"mappings":"AAAA,cACE,gBAAiB,CACjB,eAAgB","file":"6.fbea9171.chunk.css","sourcesContent":[".address-list {\n  max-height: 300px;\n  overflow-y: auto;\n}\n"]}

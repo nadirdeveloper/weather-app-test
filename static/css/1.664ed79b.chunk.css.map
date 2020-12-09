@@ -1,0 +1,1 @@
+{"version":3,"sources":["WeatherForecastStyle.scss"],"names":[],"mappings":"AACE,yBADF,oBAEI,gBAAiB,CAKpB,CAHC,yBAJF,oBAKI,YAAa,CAEhB","file":"1.664ed79b.chunk.css","sourcesContent":[".weather-background {\r\n  @media (max-width: 767px) {\r\n    min-height: 24rem;\r\n  }\r\n  @media (min-width: 768px) {\r\n    height: 100vh; // 576px\r\n  }\r\n}\r\n"]}
