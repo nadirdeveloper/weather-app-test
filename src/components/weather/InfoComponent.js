@@ -94,8 +94,8 @@ const InfoComponent = ({address, latlong, weatherCurrent}) => {
   return (
     <div className='flex justify-between items-start'>
       <div className='pt-4 px-4'>
-        <p className='font-bold' style={{fontSize:"30px"}} >{address.cityName}</p>
-        <div style={{fontSize:"25px"}} className='sm:flex-col md:flex md:flex-row font-light'>
+        <p className='font-bold'>{address.cityName}</p>
+        <div className='sm:flex-col md:flex md:flex-row font-light'>
           {!isEmpty(date) && !isEmpty(time) ? (
             <Fragment>
               <p>

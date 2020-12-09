@@ -35,7 +35,7 @@ const DayComponent = (props) => {
       }`}
       onClick={selectedDay}>
       <div className='flex flex-row flex-no-wrap sm:flex-col sm:flex-wrap justify-around items-center px-2'>
-        <p className='flex w-1/6 sm:w-full sm:justify-center text-2xl font-semibold'>
+        <p className='flex w-1/6 sm:w-full sm:justify-center text-base font-semibold'>
           {FormatTime(day.dt, day.timezone, 'ddd')}
         </p>
         {/* icon */}
@@ -51,7 +51,7 @@ const DayComponent = (props) => {
               src={`${AssetsSrcURL}/weather/${getWeatherIcon(day)}.svg`}
               alt='icon'
               title={day.summary}
-              className='sm:-mt-2 sm:-mb-1 mx-auto w-12 h-12 sm:w-20 sm:h-20 object-contain'
+              className='sm:-mt-2 sm:-mb-1 mx-auto w-12 h-12 sm:w-16 sm:h-16 object-contain'
             />
           )}
         </div>
@@ -82,7 +82,7 @@ const DayComponent = (props) => {
           <div className='flex flex-row justify-center items-center mx-2 sm:my-1 text-xs sm:text-sm'>
             <p
               className='text-xl lg:text-2xl text-sun mr-2 md:mr-1'
-              title='sunset'> 
+              title='sunset'>
               <WeatherIconComponent type='sunset' />
             </p>
             <p>{FormatTime(day.sunset, day.timezone, 'HH:mm')}</p>
